@@ -31,3 +31,11 @@ nav {
 nav a {
     font-size: 12px;
 }
+
+.sign-form {
+    width: 365px;
+    min-height: 470px;
+    background: #FFFFFF;
+    margin: 99px auto 0 auto;
+    border-radius: 3px;
+}

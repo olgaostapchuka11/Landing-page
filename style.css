@@ -1,0 +1,33 @@
+body {
+    background: url(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Roboto, sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-weight: 400;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+#logo {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+nav a {
+    font-size: 12px;
+}

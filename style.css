@@ -50,9 +50,25 @@ nav a {
     margin: auto;
     position: relative;
     top: -39px;
+    text-align: center;
+    padding: 33px;
+    box-sizing: border-box;
   }
 
+.social-icons {
+    text-align: center;
+}
 
+.social-icons h1 {
+    color:#fff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin: 36px 19px;
+}
 
 
 

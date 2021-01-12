@@ -6,6 +6,7 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+/* Headeer */
 header a {
     text-decoration: none;
     color: white;
@@ -17,13 +18,14 @@ header {
     justify-content: space-between;
     margin: auto;
     font-weight: 400;
+    padding-top: 39px;
 }
 
 nav {
     text-transform: uppercase;
 }
 
-#logo {
+.logo {
     font-size: 18px;
     color: #FFFFFF;
 }
@@ -31,6 +33,37 @@ nav {
 nav a {
     font-size: 12px;
 }
+
+.components {
+    margin-right: 30px;
+    padding-bottom: 3px;
+}
+
+.download {
+    padding-bottom: 3px;
+}
+
+.facebook, .instagram, .twitter {
+    padding-right: 24px;
+    padding-left: 24px;
+    vertical-align: middle;
+}
+
+.facebook:hover, .instagram:hover, .twitter:hover {
+    opacity: 0.6;
+}
+
+.download-icon {
+    padding-right: 10px;
+    vertical-align: bottom;
+}
+
+.components:hover, .download:hover {
+    border-bottom: 2px solid white;
+    opacity: 0.6;
+}
+
+/* Sign-form */
 
 .sign-form {
     width: 365px;
@@ -55,23 +88,76 @@ nav a {
     box-sizing: border-box;
   }
 
-.social-icons {
-    text-align: center;
-}
 
 .social-icons h1 {
+    margin: 0 0 36px 0;
     color:#fff;
     font-size: 20px;
-    margin: 0;
 }
 
 .social-icons a {
     text-decoration: none;
-    margin: 36px 19px;
+    margin: 0 19px;
 }
 
+.social-icons a:hover path {
+    opacity: 0.6;
+}
 
+h2 {
+    padding: 0 135px 33px 135px;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
 
+input {
+    border: none;
+    border-bottom: 1px solid #D2D2D2;
+    width: 260px;
+    height: 31px;
+}
+
+.input-name, .input-email, .input-password {
+    display: inline-block;
+    padding-left: 26px;
+    padding-bottom: 40px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.username-icon, .email-icon, .password-icon {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+input[type="button"] {
+    border: none;
+    color: #9C27B0;
+    background: none;
+    text-transform: uppercase;
+    padding: 0 138px 29px 138px;
+    line-height: 16px;
+    outline: none;
+}
+
+.input-name input:focus,
+.input-email input:focus,
+.input-password input:focus {
+    outline: none;
+    background-color: white;
+    color: #000000;
+  }
+
+  input[type="button"]:hover {
+      color: #000000;
+  }
+
+  input[type="button"]:active {
+    position: relative;
+    bottom: -3px;
+}
 
 
 

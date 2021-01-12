@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     font-family: Roboto, sans-serif;
+    margin: 0;
 }
 
 /* Headeer */
@@ -12,17 +13,24 @@ header a {
     color: white;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+  }
+
 header {
-    width: 1000px;
+    max-width: 1139px;
     display: flex;
     justify-content: space-between;
     margin: auto;
     font-weight: 400;
-    padding-top: 39px;
+    padding: 23px 24px;
 }
 
 nav {
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -36,7 +44,7 @@ nav a {
 
 .components {
     margin-right: 30px;
-    padding-bottom: 3px;
+    vertical-align: bottom;
 }
 
 .download {
@@ -66,17 +74,16 @@ nav a {
 /* Sign-form */
 
 .sign-form {
-    width: 365px;
     min-height: 470px;
     background: #FFFFFF;
-    margin: 99px auto 0 auto;
+    margin-top: 99px;
     border-radius: 3px;
+    padding: 0 20.5px;
 }
 
 .social-icons {
-    width: 324px;
+    width: 100%;
     height: 150px;
-  
     background: linear-gradient(90deg, #bc478f 0%, #7b1fa2 100%);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5), 0px 4px 25px rgba(0, 0, 0, 0.12);
     border-radius: 3px;
@@ -84,10 +91,9 @@ nav a {
     position: relative;
     top: -39px;
     text-align: center;
-    padding: 33px;
+    padding: 33px 37px;
     box-sizing: border-box;
   }
-
 
 .social-icons h1 {
     margin: 0 0 36px 0;
@@ -105,31 +111,84 @@ nav a {
 }
 
 h2 {
-    padding: 0 135px 33px 135px;
+    text-align: center;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
+    padding-bottom: 33px;
 }
 
-input {
-    border: none;
-    border-bottom: 1px solid #D2D2D2;
-    width: 260px;
-    height: 31px;
+form {
+    padding: 0 4px;
+  }
+  
+.first-name {
+    display: flex;
+    padding-bottom: 46px;
+  }
+  
+.first-name input {
+    width: 269px;
+    border: 0;
+    border-bottom: 1px solid #d2d2d2;
+  }
+  
+.first-name input:focus {
+    outline: none;
+    border-bottom-color: #7b1fa2;
+    transition: border-bottom-color 2s;
+  }
+  
+.first-name::before {
+    content: url("icons/name.png");
+    margin-right: 15px;
+    margin-left: 4px;
+  }
+  
+.email {
+    display: flex;
+    padding-bottom: 46px;
 }
 
-.input-name, .input-email, .input-password {
-    display: inline-block;
-    padding-left: 26px;
-    padding-bottom: 40px;
-    color: #999999;
-    font-size: 14px;
-    line-height: 16px;
+.email input {
+    width: 269px;
+    border: 0;
+    border-bottom: 1px solid #d2d2d2;
 }
 
-.username-icon, .email-icon, .password-icon {
-    padding-right: 10px;
-    vertical-align: middle;
+.email input:focus {
+    outline: none;
+    border-bottom-color: #7b1fa2;
+    transition: border-bottom-color 2s;
+}
+
+.email::before {
+    content: url("icons/email.png");
+    margin-right: 15px;
+    margin-left: 4px;
+}
+
+.password {
+    display: flex;
+    padding-bottom: 46px;
+}
+
+.password input {
+    width: 269px;
+    border: 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.password input:focus {
+    outline: none;
+    border-bottom-color: #7b1fa2;
+    transition: border-bottom-color 2s;
+}
+
+.password::before {
+    content: url("icons/password.png");
+    margin-right: 15px;
+    margin-left: 4px;
 }
 
 input[type="button"] {
@@ -137,29 +196,29 @@ input[type="button"] {
     color: #9C27B0;
     background: none;
     text-transform: uppercase;
-    padding: 0 138px 29px 138px;
     line-height: 16px;
     outline: none;
+    display: block;
+    margin: 0 auto;
 }
 
-.input-name input:focus,
-.input-email input:focus,
-.input-password input:focus {
-    outline: none;
-    background-color: white;
+input[type="button"]:hover {
     color: #000000;
-  }
+}
 
-  input[type="button"]:hover {
-      color: #000000;
-  }
-
-  input[type="button"]:active {
+input[type="button"]:active {
     position: relative;
     bottom: -3px;
 }
 
 
+@media only screen and (max-width: 786px) {
+    header {
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  
 
 
 

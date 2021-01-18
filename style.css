@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-/* Headeer */
+/* Header */
 header a {
     text-decoration: none;
     color: white;
@@ -27,6 +27,7 @@ header {
     padding: 23px 24px;
 }
 
+
 nav {
     text-transform: uppercase;
     display: flex;
@@ -45,10 +46,12 @@ nav a {
 .components {
     margin-right: 30px;
     vertical-align: bottom;
+    border-bottom: 2px solid transparent;
 }
 
 .download {
     padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
 }
 
 .facebook, .instagram, .twitter {
@@ -70,6 +73,24 @@ nav a {
     border-bottom: 2px solid white;
     opacity: 0.6;
 }
+
+.dropdown {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 10px 0;
+    
+    z-index: 1;
+    width: 30px;
+    
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
 
 /* Sign-form */
 
@@ -98,6 +119,7 @@ nav a {
 .social-icons h1 {
     margin: 0 0 36px 0;
     color:#fff;
+    font-weight: normal;
     font-size: 20px;
 }
 
@@ -118,6 +140,7 @@ h2 {
     padding-bottom: 33px;
 }
 
+/* Form  */
 form {
     padding: 0 4px;
   }
@@ -211,18 +234,86 @@ input[type="button"]:active {
     bottom: -3px;
 }
 
+/* Footer */
+
+footer { 
+    max-width: 1139px;
+    padding: 25px 24px 0 24px;
+    padding-top: 25px;
+    padding-left: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-weight: 500;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__text {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-right: 34px;
+}
+
+.footer__text:hover {
+    opacity: 0.6;
+    border-bottom: 2px solid white;
+}
+
+.copyright p {
+    font-size: 14px;
+    line-height: 16px;
+    color:#FFFFFF;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+
+
+
 
 @media only screen and (max-width: 786px) {
     header {
       background: rgba(0, 0, 0, 0.4);
     }
+
+    nav {
+        display: none; 
+
+        background-color:rgba(0, 0, 0, 0.4);
   }
+  
+    nav.active {
+        display: block;
+    }
+
+    .dropdown{
+    display: block;
+}
+}
 
   
 
+  @media only screen and (max-width: 760px) {
+ 
+
+
+  }
 
 
 
 
+    
 
-
+   
+    

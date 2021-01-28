@@ -52,6 +52,7 @@ nav a {
 .download {
   padding-bottom: 3px;
   border-bottom: 2px solid transparent;
+  vertical-align: bottom;
 }
 
 .facebook,
@@ -91,10 +92,12 @@ nav a {
   background: none;
   cursor: pointer;
   display: none;
+  outline: none;
 }
 
 .cancel {
   display: none;
+  outline: none;
 }
 
 /* Sign-form */
@@ -150,18 +153,20 @@ form {
   padding: 0 4px;
 }
 
-.first-name {
+.sign-inp {
   display: flex;
   padding-bottom: 46px;
+  width: 70vw;
+  max-width: 296px;
 }
 
-.first-name input {
-  width: 269px;
+.sign-inp input {
+  width: 100%;
   border: 0;
   border-bottom: 1px solid #d2d2d2;
 }
 
-.first-name input:focus {
+.sign-inp input:focus {
   outline: none;
   border-bottom-color: #7b1fa2;
   transition: border-bottom-color 2s;
@@ -173,44 +178,10 @@ form {
   margin-left: 4px;
 }
 
-.email {
-  display: flex;
-  padding-bottom: 46px;
-}
-
-.email input {
-  width: 269px;
-  border: 0;
-  border-bottom: 1px solid #d2d2d2;
-}
-
-.email input:focus {
-  outline: none;
-  border-bottom-color: #7b1fa2;
-  transition: border-bottom-color 2s;
-}
-
 .email::before {
   content: url("icons/email.png");
   margin-right: 15px;
   margin-left: 4px;
-}
-
-.password {
-  display: flex;
-  padding-bottom: 46px;
-}
-
-.password input {
-  width: 269px;
-  border: 0;
-  border-bottom: 1px solid #d2d2d2;
-}
-
-.password input:focus {
-  outline: none;
-  border-bottom-color: #7b1fa2;
-  transition: border-bottom-color 2s;
 }
 
 .password::before {
@@ -310,7 +281,9 @@ footer {
   }
 
   .nav-open a {
-    padding: 10px;
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
   }
 
   .nav-open .components,
@@ -324,6 +297,11 @@ footer {
 
   nav.active {
     display: block;
+  }
+
+  .download-icon {
+    height: 25px;
+    vertical-align: middle;
   }
 
   .dropdown {
@@ -348,6 +326,20 @@ footer {
 
   .cancel svg:hover {
     opacity: 0.6;
+  }
+
+  .dark {
+    display: none;
+  }
+
+  .dark.open {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   /* Footer */
